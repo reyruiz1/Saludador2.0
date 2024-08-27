@@ -9,7 +9,8 @@ form.addEventListener("submit", (event) => {
   const nombre = document.querySelector("#nombre").value;
   const genero = document.querySelector("#genero").value;
   const edad = document.querySelector("#edad").value;
+  const idioma = document.querySelector("#idioma").value;
 
-  const saludo = saludador({ nombre, genero, edad });
+  const saludo = saludador({ nombre, genero, edad, idioma });
   div.innerHTML = "<p>" + saludo + "</p>";
 });
