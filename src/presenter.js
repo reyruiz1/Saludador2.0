@@ -6,6 +6,7 @@ const div = document.querySelector("#resultado-div");
 form.addEventListener("submit", (event) => {
   event.preventDefault();
 
-  const saludo = "Hola, ¡Bienvenid@!";
+  const nombre = document.querySelector("#nombre").value;
+  const saludo = saludador(nombre);
   div.innerHTML = "<p>" + saludo + "</p>";
 });
