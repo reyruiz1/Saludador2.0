@@ -8,7 +8,8 @@ form.addEventListener("submit", (event) => {
 
   const nombre = document.querySelector("#nombre").value;
   const genero = document.querySelector("#genero").value;
+  const edad = document.querySelector("#edad").value;
 
-  const saludo = saludador({ nombre, genero });
+  const saludo = saludador({ nombre, genero, edad });
   div.innerHTML = "<p>" + saludo + "</p>";
 });

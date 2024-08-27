@@ -1,12 +1,12 @@
-function saludador({ nombre, genero }) {
+function saludador({ nombre, genero, edad }) {
     let saludo = "Hola";
 
     if (genero === "masculino") {
-        saludo += ` señor ${nombre}, ¡Bienvenido!`;
+        saludo += ` señor ${nombre}, de ${edad} años, ¡Bienvenido!`;
     } else if (genero === "femenino") {
-        saludo += ` señora ${nombre}, ¡Bienvenida!`;
+        saludo += ` señora ${nombre}, de ${edad} años, ¡Bienvenida!`;
     } else {
-        saludo += ` ${nombre}, ¡Bienvenid@!`;
+        saludo += ` ${nombre}, de ${edad} años, ¡Bienvenid@!`;
     }
 
     return saludo;
