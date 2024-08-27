@@ -7,6 +7,8 @@ form.addEventListener("submit", (event) => {
   event.preventDefault();
 
   const nombre = document.querySelector("#nombre").value;
-  const saludo = saludador(nombre);
+  const genero = document.querySelector("#genero").value;
+
+  const saludo = saludador({ nombre, genero });
   div.innerHTML = "<p>" + saludo + "</p>";
 });
